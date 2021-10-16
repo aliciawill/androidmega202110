@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="여행을 떠나볼까요"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/tourName"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@android:drawable/button_onoff_indicator_off"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_weight="1"
+            android:text="go!"
+            android:textSize="36sp"
+            app:backgroundTint="@android:color/holo_orange_light" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="127dp"
+            android:layout_weight="1"
+            android:text="GO2"
+            android:textSize="30sp"
+            app:backgroundTint="@color/purple_500" />
+    </LinearLayout>
+
+</LinearLayout>

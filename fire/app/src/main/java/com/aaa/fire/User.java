@@ -1,4 +1,4 @@
-package com.example.fire2;
+package com.aaa.fire;
 
 public class User {
     String userName;

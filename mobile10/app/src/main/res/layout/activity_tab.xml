@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabActivity">
+<!-- context: 안드로이드에서는 activity하나를 의미!
+              스프링프로젝트에서는 project하나를 의미!
+-->
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/tabSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:background="@color/teal_200"
+                    >
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/text1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="i am song...!!!"-->
+<!--                        ></TextView>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="324dp"-->
+<!--                        app:srcCompat="@android:drawable/btn_star_big_on" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tabArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:background="@color/yellow"
+                    >
+<!--                    <TextView-->
+<!--                        android:id="@+id/text2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="i am artist..!!!"-->
+<!--                        ></TextView>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="324dp"-->
+<!--                        app:srcCompat="@android:drawable/checkbox_on_background" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tabAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:orientation="vertical"
+                    android:background="@color/design_default_color_background"
+                    >
+<!--                    <TextView-->
+<!--                        android:id="@+id/text3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="i am album...!!!"-->
+<!--                        ></TextView>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imageView3"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="324dp"-->
+<!--                        app:srcCompat="@android:drawable/presence_video_busy" />-->
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>

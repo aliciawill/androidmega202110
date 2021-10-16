@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TabActivity">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:id="@+id/tabSong"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/teal_200"
+                    android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/text1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="i am song---------------------"/>
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i am song2---------------------"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tabArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="#ff00ff"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i am artist---------------------"/>
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i am artist2---------------------"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tabAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="#00ffff"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/text5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i am Album---------------------"/>
+                    <TextView
+                        android:id="@+id/text6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i am Album2---------------------"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</LinearLayout>
