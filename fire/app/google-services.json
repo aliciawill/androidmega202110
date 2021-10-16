@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "632344675966",
+    "project_id": "mega20211015",
+    "storage_bucket": "mega20211015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632344675966:android:52d7876021494721023a2f",
+        "android_client_info": {
+          "package_name": "com.aaa.fire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632344675966-8alr2oa0jm6d5uae7ld27npvonfr5dia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOtEbuSYPsmqgpGTy6ilG26G_-g0L6t40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632344675966-8alr2oa0jm6d5uae7ld27npvonfr5dia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
